@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsLuckyNumber.MainPage">
+
+    <StackLayout Orientation="Vertical">
+
+        <Label Text="Lucky Number (Xamarin Forms)"
+               FontSize="Title"
+               HorizontalOptions="Center"
+               Padding="20"
+               />
+        <Label x:Name="luckyNumber"
+               FontSize="200"
+               TextColor="#2196F3"
+               Padding="50"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Text="?"
+               />
+        <Button Text="Play"
+                VerticalOptions="End"
+                HorizontalOptions="Fill"
+                Margin="10"
+                Clicked="OnPlay"
+            />
+    </StackLayout>
+
+</ContentPage>
